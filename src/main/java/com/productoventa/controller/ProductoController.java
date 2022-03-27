@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping(path = "/api/productos")
+@RequestMapping(path = "/productos")
 public class ProductoController {
     @Autowired
     private ProductInterfaceService productInterfaceService;
