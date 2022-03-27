@@ -10,7 +10,7 @@ public class Producto {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nombre;
-    private Double precion;
+    private Double precio;
     private String imagen;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_categoria")
@@ -32,12 +32,12 @@ public class Producto {
         this.nombre = nombre;
     }
 
-    public Double getPrecion() {
-        return precion;
+    public Double getPrecio() {
+        return precio;
     }
 
-    public void setPrecion(Double precion) {
-        this.precion = precion;
+    public void setPrecio(Double precio) {
+        this.precio = precio;
     }
 
     public String getImagen() {
