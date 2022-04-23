@@ -17,9 +17,10 @@ public class ProVentaUserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        return usuarioRepository.getConsltarLogin(username)
-                .map(usuario -> new User(usuario.getLogin(), usuario.getContrasena(), new ArrayList<>()))
-                .orElse(null);
+//        return usuarioRepository.getConsltarLogin(username)
+//                .map(usuario -> new User(usuario.getLogin(), usuario.getContrasena(), new ArrayList<>()))
+//                .orElse(null);
+        return new User("alejandro", "{noop}platzi", new ArrayList<>());
     }
 
 }
