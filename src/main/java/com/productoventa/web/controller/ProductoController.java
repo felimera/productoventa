@@ -1,4 +1,4 @@
-package com.productoventa.controller;
+package com.productoventa.web.controller;
 
 import com.productoventa.dto.ProductDto;
 import com.productoventa.service.ProductInterfaceService;
